@@ -4,25 +4,37 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title> SporteFi </title>
+        <title> SporteFree </title>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <h1>Multimídia</h1>
+        <div id="table">
+            <div id="cell">
+                <div id="player">
+                    <div id="cover">
+                        <div id="controles">
+                            <a id="voltar"> ◄◄ </a>
+                            <a id="proxima"> ►► </a>
+                        </div>
+                        <h1>
+                            <div id="audiowrap">
+                                <div id="nomemusica"> Selecione ou adicione musica para tocar </div>
+                                <div id="audio0">
+                                    <audio preload id="audioplayer" controls> Formato não suportado pelo navegador </audio>
+                                </div>
+                                <span class="user-name">
+                                    <label id="adicionarmusica" for="loader"> ADICIONAR MUSICAS </label>
+                                    <input type="file" name="musica" id="loader" accept="audio/*">
+                                </span>
+                            </div>
+                        </h1>
+                    </div>
 
-        <label for="loader"> Adicione uma música à playlist: </label>
-        <br>
-        <input type="file" name="musica" id="loader" accept="audio/*">
+                    <ul></ul>
 
-        <div id="playerDeAudio">
-            <label id="nomemusica" for="player"> Clique em uma musica para tocar </label>
-            <br>
-            <audio controls src="" id="player"></audio>
-            <button id="voltar"> ◄◄ </button>
-            <button id="proxima"> ►► </button>
+                </div>
+            </div>
         </div>
-
-        <ol></ol>
 
         <script src="js/main.js"></script>
     </body>
